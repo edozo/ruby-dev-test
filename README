@@ -1,0 +1,42 @@
+This application stores property transactions (sale and lease).
+Each agency sends to us a csv file with the all the transacitons they handled they handle.
+
+Privided is a started, simplified application to prototype our solution.
+The application already has a database set up - see `support/db_setup.rb`
+
+SETUP:
+run `bundle install` in the main directory
+
+SPECS:
+Please review specs in spec directory.
+To run specs, use `rspec`
+
+TASK:
+There is a number of specs already prepared for you. Some are failing but most are not implemented.
+
+You need to implement 2 classes:
+1. CsvImport 
+  - accepts the csv file and agency name and inserts the transaction and associated records into the database
+2. Search 
+  - takes different parameters and returns transaction data
+
+
+NOTES:
+Do not spend more than 3 hours on this task, if any of the specs are problematic, describe the problem and move to the next one.
+There is probably not enough time to implement everything. Please focus on what feels important, but try to do some work in both search and import module.
+Please commit your work regularly.
+Feel free to modify setup code if it helps, but please focus on the task at hand.
+There is no need to implement any Rails endpoints etc - we want to focus on the behavior of import and search.
+You can add your own specs to help you with the implementations
+If time allows, you can expand on specification and introduce other functionality you feel would be useful.
+
+DISCUSSION POINTS:
+Let's imagine we want to launch it as Rails application provides an API with search:
+- could you use this code. What would have to change?
+- instead of importing CSV, our clients will upload it to their dropbox account. How would we implement that?
+Nearby properties should be found by distance (ie in radius of 1 mile) instead of by postcode.
+- How would you approach it?
+We have decided to change the storage from sqlite to MongoDB
+- Which parts of your code will be reused and which can change?
+Could you model the database differently? What would you change?
+
