@@ -1,8 +1,7 @@
 This application stores property transactions (sale and lease).
-Each agency sends to us a csv file with the all the transacitons they handled they handle.
+Each agency sends to us a csv file with the all the transactions they handled.
 
-Privided is a started, simplified application to prototype our solution.
-The application already has a database set up - see `support/db_setup.rb`
+Provided is a prototype application to implement our solution.
 
 SETUP:
 run `bundle install` in the main directory
@@ -20,15 +19,17 @@ You need to implement 2 classes:
 2. Search 
   - takes different parameters and returns transaction data
 
+The application already has a database set up - see `support/db_setup.rb`
+
 
 NOTES:
-Do not spend more than 3 hours on this task, if any of the specs are problematic, describe the problem and move to the next one.
-There is probably not enough time to implement everything. Please focus on what feels important, but try to do some work in both search and import module.
-Please commit your work regularly.
-Feel free to modify setup code if it helps, but please focus on the task at hand.
-There is no need to implement any Rails endpoints etc - we want to focus on the behavior of import and search.
-You can add your own specs to help you with the implementations
-If time allows, you can expand on specification and introduce other functionality you feel would be useful.
+- Do not spend more than 3 hours on this task, if any of the specs are problematic, describe the problem and move to the next one.
+- There is probably not enough time to implement everything. Please focus on what feels important, but try to do some work in both search and import module.
+- Please commit your work regularly.
+- Feel free to modify setup code if it helps, but please focus on the task at hand.
+- There is no need to implement any Rails endpoints etc - we want to focus on the behavior of import and search.
+- You can add your own specs to help you with the implementations
+- If time allows, you can expand on specification and introduce other functionality you feel would be useful.
 
 DISCUSSION POINTS:
 Let's imagine we want to launch it as Rails application provides an API with search:
